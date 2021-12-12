@@ -1,0 +1,28 @@
+{
+  "name": "@fcannizzaro/console-log-ws",
+  "version": "1.0.1",
+  "description": "A Websocket server / client to use a remote console.log",
+  "main": "dist/client.js",
+  "author": "Francesco Saverio Cannizzaro (fcannizzaro)",
+  "bin": {
+    "console-log-ws": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc --module commonjs --outDir dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "console.log",
+    "websockets"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@types/ws": "^8.2.2"
+  }
+}

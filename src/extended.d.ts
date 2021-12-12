@@ -1,0 +1,3 @@
+interface Console {
+    off: () => void
+}
