@@ -47,7 +47,7 @@ var setup = function (port, address) {
     if (address === void 0) { address = "127.0.0.1"; }
     return new Promise(function (res) {
         ws = new ws_1.default("ws://" + address + ":" + port);
-        ws.on('open', res);
+        ws.once('open', res);
     });
 };
 exports.setup = setup;

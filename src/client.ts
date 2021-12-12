@@ -4,7 +4,7 @@ let ws: WebSocket;
 
 export const setup = (port = 2222, address = "127.0.0.1") => new Promise((res) => {
     ws = new WebSocket(`ws://${address}:${port}`);
-    ws.on('open', res);
+    ws.once('open', res);
 });
 
 global.console.log = (...args) => {

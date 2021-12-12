@@ -1,6 +1,6 @@
 {
   "name": "@fcannizzaro/console-log-ws",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A Websocket server / client to use a remote console.log",
   "main": "dist/client.js",
   "author": "Francesco Saverio Cannizzaro (fcannizzaro)",
